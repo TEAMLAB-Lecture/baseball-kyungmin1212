@@ -277,9 +277,22 @@ def is_no(one_more_input):
 
 def main():
     print("Play Baseball")
-    user_input = 999
+    user_input = input('Input guess number : ')
+    if not is_digit(user_input) or is_duplicated_number(user_input):
+        print('Wrong Input')
+        return
+    
     random_number = str(get_not_duplicated_three_digit_number())
     print("Random Number is : ", random_number)
+    if get_strikes_or_ball(user_input, random_number)==[3,0]:
+        print("You win, one more(Y/N) ?\n")
+        check=input()
+        if is_yes(check):
+            main()
+        elif is_no(check):
+            pass
+    else:
+        main()
     # ===Modify codes below=============
     # 위의 코드를 포함하여 자유로운 수정이 가능함
 
