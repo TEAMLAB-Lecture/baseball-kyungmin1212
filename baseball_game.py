@@ -102,9 +102,9 @@ def is_duplicated_number(three_digit):
         number_set.add(i)
     number_list=list(number_set)
     if len(number_list)==3:
-        result=False
-    else:
         result=True
+    else:
+        result=False
 
     # ==================================
     return result
@@ -132,7 +132,7 @@ def is_validated_number(user_input_number):
     # '''
     # ===Modify codes below=============
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
-    if is_digit(user_input_number) and is_between_100_and_999(user_input_number) and not is_duplicated_number(user_input_number):
+    if is_digit(user_input_number) and is_between_100_and_999(user_input_number) and is_duplicated_number(user_input_number):
         result=True
     else:
         result=False
@@ -272,7 +272,6 @@ def is_no(one_more_input):
 
     # ==================================
     return result
-print(is_no("no"))
 
 def main():
     print("Play Baseball")
