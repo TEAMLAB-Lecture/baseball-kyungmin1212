@@ -160,8 +160,9 @@ def get_not_duplicated_three_digit_number():
     # ===Modify codes below=============
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
     # get_random_number() 함수를 사용하여 random number 생성
-
-    result =  get_random_number()
+    result=str(get_random_number())
+    while is_duplicated_number(result):
+        result =  str(get_random_number())
     # ==================================
     return result
 
