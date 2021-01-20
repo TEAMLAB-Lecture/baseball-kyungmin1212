@@ -316,7 +316,7 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    print(is_duplicated_number('4120'))
+    main()
+
     print("Thank you for using this program")
     print("End of the Game")
