@@ -296,7 +296,9 @@ def main():
     while True:
         if get_strikes_or_ball(user_input, random_number)==[3,0]:
             check=input("You win, one more(Y/N) ?")
-            if is_yes(check):
+            if check=="0":
+                break
+            elif is_yes(check):
                 main()
                 break
             elif is_no(check):
