@@ -101,7 +101,7 @@ def is_duplicated_number(three_digit):
     for i in three_digit:
         number_set.add(i)
     number_list=list(number_set)
-    if len(number_list)==len(three_digit):
+    if len(number_list)==3:
         result=False
     else:
         result=True
@@ -276,7 +276,7 @@ def is_no(one_more_input):
 
 
 def main():
-    print("Play Baseball")
+
     random_number = str(get_not_duplicated_three_digit_number())
     print("Random Number is : ", random_number)
     user_input="999"
@@ -316,7 +316,7 @@ def main():
 
 
 if __name__ == "__main__":
+    print("Play Baseball")
     main()
-
     print("Thank you for using this program")
     print("End of the Game")
