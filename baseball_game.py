@@ -101,7 +101,7 @@ def is_duplicated_number(three_digit):
     for i in three_digit:
         number_set.add(i)
     number_list=list(number_set)
-    if len(number_list)==3:
+    if len(number_list)==len(three_digit):
         result=False
     else:
         result=True
@@ -316,6 +316,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    print(is_duplicated_number('4120'))
     print("Thank you for using this program")
     print("End of the Game")
