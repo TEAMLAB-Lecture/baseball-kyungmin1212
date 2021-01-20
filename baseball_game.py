@@ -293,17 +293,19 @@ def main():
         if user_input=="0":
             break
         print(f"Strikes : {get_strikes_or_ball(user_input, random_number)[0]}, Balls : {get_strikes_or_ball(user_input, random_number)[1]}")
-    def yncheck():
+    while True:
         if get_strikes_or_ball(user_input, random_number)==[3,0]:
             check=input("You win, one more(Y/N) ?")
             if is_yes(check):
                 main()
+                break
             elif is_no(check):
-                pass
+                break
             else:
                 print('Wrong Input, Input again')
-                yncheck()
-    yncheck()
+        else:
+            break
+
     # ===Modify codes below=============
     # 위의 코드를 포함하여 자유로운 수정이 가능함
 
