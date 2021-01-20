@@ -295,8 +295,7 @@ def main():
         print(f"Strikes : {get_strikes_or_ball(user_input, random_number)[0]}, Balls : {get_strikes_or_ball(user_input, random_number)[1]}")
     def yncheck():
         if get_strikes_or_ball(user_input, random_number)==[3,0]:
-            print("You win, one more(Y/N) ?",end="")
-            check=input()
+            check=input("You win, one more(Y/N) ?")
             if is_yes(check):
                 main()
             elif is_no(check):
