@@ -292,7 +292,7 @@ def main():
                 break
         if user_input=="0":
             break
-        print(f"Strikes : {get_strikes_or_ball(user_input, random_number)[0]}, Balls : {get_strikes_or_ball(user_input, random_number)[1]}")
+        print(f"Strikes : {get_strikes_or_ball(user_input, random_number)[0]} , Balls : {get_strikes_or_ball(user_input, random_number)[1]}")
     while True:
         if get_strikes_or_ball(user_input, random_number)==[3,0]:
             check=input("You win, one more(Y/N) ?")
